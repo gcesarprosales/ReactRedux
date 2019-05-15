@@ -109,11 +109,13 @@ console.log(persona['edad'])
 
 //Object constructor
 function Tarea(nombre,urgencia){
-    this.nombre = nomre;
+    this.nombre = nombre;
     this.urgencia = urgencia;
 }
 const tarea1 = new Tarea('Aprender JavaScript','Urgente')
 const tarea2 = new Tarea('Lavar el carro','baja')
+
+//Agregué está línea csdcsdcsd
 
 
 
