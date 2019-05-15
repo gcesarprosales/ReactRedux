@@ -59,6 +59,7 @@ const cliente = function(nombreCliente){
 cliente('Carlos')
 
 
+
 //Parametros por default en las funciones
 function actividad(nombre = 'Mond', actividad = 'estudiando'){
     console.log(`La persona ${nombre} esta realizando la actividad ${actividad}`);
@@ -67,9 +68,52 @@ function actividad(nombre = 'Mond', actividad = 'estudiando'){
  actividad('Pedro','un sitio web');
  actividad();
  actividad('Antonio ')
+
+// const actividadUno = function(nombre = 'Mond', actividad = 'estudiante'){
+//      console.log(`La persna ${nombre} esta realizando la actividad ${actividad}`)
+//  }
+// actividadUno()
+// actividadUno('Cesar', 'tecleando')
+
+
+
+//Arrow function
+// let viajando = (destino, duracion) => {
+//     return `Viajando a la ciduad de ${destino} por ${duracion}`;
+// }
+
+// let viaje;
+// viaje = viajando('Barcelona','9 días')
+// console.log(viaje)
+let viajando = destino => `Viajando a la ciudad de ${destino}`;
+
+let viaje;
+viaje = viajando('Paris');
+console.log(viaje)
+
 */
- const actividadUno = function(nombre = 'Mond', actividad = 'estudiante'){
-     console.log(`La persna ${nombre} esta realizando la actividad ${actividad}`)
- }
-actividadUno()
-actividadUno('Cesar', 'tecleando')
+
+//OBJETOS
+//Objeto literal = Object Literal
+
+const persona = {
+    nombre: 'Juan',
+    profesion: 'Desarrollador web',
+    edad: 500
+}
+console.log(persona)
+console.log(persona.nombre)
+console.log(persona['profesion'])
+console.log(persona.edad)
+console.log(persona['edad'])
+
+//Object constructor
+function Tarea(nombre,urgencia){
+    this.nombre = nomre;
+    this.urgencia = urgencia;
+}
+const tarea1 = new Tarea('Aprender JavaScript','Urgente')
+const tarea2 = new Tarea('Lavar el carro','baja')
+
+
+
