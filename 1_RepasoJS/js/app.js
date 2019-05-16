@@ -114,7 +114,7 @@ function Tarea(nombre,urgencia){
 }
 const tarea1 = new Tarea('Aprender JavaScript','Urgente')
 const tarea2 = new Tarea('Lavar el carro','baja')
-*/
+
 
 //PROTOTYPE
     //Object constuctor
@@ -129,6 +129,28 @@ Tarea.prototype.mostrarInformacionTarea = function() {
 const tarea1 = new Tarea('Aprender a programar React','Urgente');
 console.log(tarea1)
 console.log(tarea1.mostrarInformacionTarea());
+*/
+
+//    CONTRUNCTING DE OBJETOS
+//  Extraer valores de un objeto
+
+const aprendiendoJS = {   // Objeto literal
+    version: {
+        nueva: 'ES6',
+        vieja: 'ES5'
+    },
+    frameworks: ['ReactJS','VueJS','AngularJS']
+}
+// console.log(aprendiendoJS);
+
+// let version = aprendiendoJS.version.vieja;
+// console.log(version)
+let {version, frameworks} = aprendiendoJS;
+console.log(version)
+console.log(frameworks)
+
+let {vieja} = aprendiendoJS.version
+console.log(vieja)
 
 
 
