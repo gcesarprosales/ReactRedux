@@ -132,5 +132,3 @@ console.log(tarea1.mostrarInformacionTarea());
 
 
 
-
-
