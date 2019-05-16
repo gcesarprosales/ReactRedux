@@ -91,7 +91,7 @@ let viaje;
 viaje = viajando('Paris');
 console.log(viaje)
 
-*/
+
 
 //OBJETOS
 //Objeto literal = Object Literal
@@ -114,8 +114,23 @@ function Tarea(nombre,urgencia){
 }
 const tarea1 = new Tarea('Aprender JavaScript','Urgente')
 const tarea2 = new Tarea('Lavar el carro','baja')
+*/
 
-//Agregué está línea csdcsdcsd
+//PROTOTYPE
+    //Object constuctor
+function Tarea(nombre, urgencia){
+    this.nombre = nombre;
+    this.urgencia = urgencia;
+}
+    //Agregar un Prototype  al objeto Tarea y crear la function mostrarInformacionTarea
+Tarea.prototype.mostrarInformacionTarea = function() {
+    return `La tarea ${this.nombre} tiene una urgencia de ${this.urgencia}`;
+}
+const tarea1 = new Tarea('Aprender a programar React','Urgente');
+console.log(tarea1)
+console.log(tarea1.mostrarInformacionTarea());
+
+
 
 
 
