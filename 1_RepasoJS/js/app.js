@@ -129,7 +129,7 @@ Tarea.prototype.mostrarInformacionTarea = function() {
 const tarea1 = new Tarea('Aprender a programar React','Urgente');
 console.log(tarea1)
 console.log(tarea1.mostrarInformacionTarea());
-*/
+
 
 //    CONTRUNCTING DE OBJETOS
 //  Extraer valores de un objeto
@@ -153,4 +153,32 @@ let {vieja} = aprendiendoJS.version
 console.log(vieja)
 
 
+//OBJECT LITERAL ENHANCEMENT (CLASE 18)
+const banda = 'Metallica'
+const genero = 'Heavy Metal'
+const canciones = ['Master of Puppets','Seek & Destroy','One']
+
+    //Forma anterior de hacer enhancement 
+// const metallica = {
+//     banda : banda,
+//     genero : genero,
+//     canciones : canciones
+// }
+// console.log(metallica)
+    //Forma nueva de hacer enhancemet 
+const metallica = {banda, genero, canciones}
+console.log(metallica)
+*/
+
+// METODOS O FUNCIONES EN UN OBJETO (CLASE 20)
+const persona = {
+    nombre: 'Juan',
+    trabajo: 'Desarrollador Web',
+    edad: 500,
+    musicRock: true,
+    mostrarInformacion(){
+        console.log(`${this.nombre} es ${this.trabajo} y su edad es de ${this.edad} anios`)
+    }
+}
+persona.mostrarInformacion();
 
