@@ -168,9 +168,9 @@ const canciones = ['Master of Puppets','Seek & Destroy','One']
     //Forma nueva de hacer enhancemet 
 const metallica = {banda, genero, canciones}
 console.log(metallica)
-*/
 
-// METODOS O FUNCIONES EN UN OBJETO (CLASE 20)
+
+// METODOS O FUNCIONES EN UN OBJETO (CLASE 19)
 const persona = {
     nombre: 'Juan',
     trabajo: 'Desarrollador Web',
@@ -181,4 +181,21 @@ const persona = {
     }
 }
 persona.mostrarInformacion();
+*/
+
+// ARREGLOS, .map Y object.key  (CLASE 20)
+const carrito = ['Producto 1','Producto 2','Producto 3'];
+console.log(carrito);
+carrito.map( producto => {
+    console.log(`El producto es el ${producto}`);
+} )
+
+const persona = {
+    nombre: 'Juan',
+    profesion: 'Desarrollador Web',
+    edad: 500,
+    sexo: 'masculino'
+}
+console.log(Object.keys(persona))
+
 
