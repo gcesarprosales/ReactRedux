@@ -204,9 +204,10 @@ let lenguajes = ['JavaScript','PHP','Python'];
 let framework = ['ReactJC','Laravel','Django'];
 let combinacion = [...lenguajes,...framework];
 console.log(combinacion)
-*/
 
-// .filter . find  .reduce   (CLASE 22)
+
+//(CLASE 22)(CLASE 22)(CLASE 22)(CLASE 22)(CLASE 22)(CLASE 22)
+// .filter . find  .reduce
 const personas = [
     {nombre: 'Juan', edad: 23, aprendiendo: 'JavaScript'},
     {nombre: 'Pablo', edad: 18, aprendiendo: 'PHP'},
@@ -219,4 +220,32 @@ let personas28 = personas.filter(persona => {
     return persona.edad > 28;
 })
 console.log(personas28);
+    // .find 
+const alejandra = personas.find(persona => {
+    return persona.nombre === 'Alejandra'
+})
+console.log(alejandra)
+    // .reduce para hacer la sumatoria
+let total = personas.reduce((edadTotal,persona) => {
+    return edadTotal + persona.edad;
+},0)   // El cero es el offser
+console.log(total/personas.length)
+*/
+
+//(CLASE 23)(CLASE 23)(CLASE 23)(CLASE 23)(CLASE 23)(CLASE 23)
+// PROMISES = PROMESAS; llamado asincrono;  sirve para realizar procesos en segundo plano
+const aplicarDescuento = new Promise((resolve, reject) => {
+    setTimeout(() => {    //Creando un Delay    
+        let descuento = false;
+        if(descuento) {
+            resolve('Descuento aplicado!!   :)')    //Resolve lo que es correto
+        }else{
+            reject('Descuento no aplicado!! :(')    //Reject lo que es incorrect
+        }
+    },3000) // Delay de 3000 mseg
+});
+    //Para mandar a llamar el promise
+aplicarDescuento
+    .then(resultado => console.log(resultado))
+    .catch(error => console.log(error))
 
