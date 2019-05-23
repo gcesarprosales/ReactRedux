@@ -181,7 +181,7 @@ const persona = {
     }
 }
 persona.mostrarInformacion();
-*/
+
 
 // ARREGLOS, .map Y object.key  (CLASE 20)
 const carrito = ['Producto 1','Producto 2','Producto 3'];
@@ -198,4 +198,25 @@ const persona = {
 }
 console.log(Object.keys(persona))
 
+//  SPREAD OPERATOR (CLASE 21)
+    // combinar arreglos, clonar un arreglo
+let lenguajes = ['JavaScript','PHP','Python'];
+let framework = ['ReactJC','Laravel','Django'];
+let combinacion = [...lenguajes,...framework];
+console.log(combinacion)
+*/
+
+// .filter . find  .reduce   (CLASE 22)
+const personas = [
+    {nombre: 'Juan', edad: 23, aprendiendo: 'JavaScript'},
+    {nombre: 'Pablo', edad: 18, aprendiendo: 'PHP'},
+    {nombre: 'Alejandra', edad: 21, aprendiendo: 'AdoveXD'},
+    {nombre: 'Karen', edad: 30, aprendiendo: 'Python'},
+    {nombre: 'Miguel', edad: 35, aprendiendo: 'ReactJS'}
+];
+    // .filter   mayores a 28 años
+let personas28 = personas.filter(persona => {
+    return persona.edad > 28;
+})
+console.log(personas28);
 
